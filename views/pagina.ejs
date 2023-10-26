@@ -23,6 +23,18 @@
         .zoom-container {
             position: relative;
         }
+
+        input[type=number]::-webkit-inner-spin-button { 
+            -webkit-appearance: none;
+            
+        }
+        input[type=number] { 
+           -moz-appearance: textfield;
+           appearance: textfield;
+        
+        }
+        
+        
     </style>
 </head>
 <body>
@@ -126,7 +138,7 @@
 
     <!-- Script para inicializar o plugin de zoom e alterar a imagem principal -->
 
-     <!-- <script>
+  <!--   <script>
         $(document).ready(function() {
             // Inicialize o plugin de zoom na imagem principal
             $("#main-image").elevateZoom({
@@ -168,7 +180,7 @@
                     });
                 
 
-    </script>-->
+    </script> -->
     
 </body>
 </html>
