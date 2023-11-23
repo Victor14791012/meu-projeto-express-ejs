@@ -50,16 +50,15 @@
       
      
      
-      <% for(let poduto of produtos){ %>
+      <% for (let produto of produtos) {%>
         <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
           <div class="card">
-              <img src="imagens/img-1.jpg" class="card-img-top imagens" alt="Product Image">
+              <img src="<%= produto.img %>" class="card-img-top imagens" alt="Product Image">
               <div class="card-body">
-                <h4 class="card-title limit-text">Notebook Samsung NP550XDA-KV3BR Intel Core i3-1115G4 4GB 256GB SSD Tela 15,6" Windows 11 - Cinza Chumbo</h4>
+                <h4 class="card-title limit-text"> <%= produto.nome %> </h4>
       
       
-                  <p class="card-text text-muted" id="descricao">8x de R$ 312,48 sem juros no cartão de crédito <br>
-                    receba de volta R$ 125,00 na Ame</p>
+                  <p class="card-text text-muted" id="descricao"> <%= produto.descricao %>  </p>
                   <div class="d-flex justify-content-between align-items-center">
                       <div class="rating">
                           <span class="bi bi-star-fill text-warning"></span>
@@ -75,9 +74,10 @@
                    R$ <del>3,499.90</del>
                   </div>
                     
-                    <small><b>R$</b></small> <b>2.499,90</b>
-                    <a href="pagina" class="btn btn-outline-danger  float-end me-4 col-4">Comprar</a>
-      
+                    <small><b>R$</b></small> <b><%= produto.preco %></b>
+                    <a href="pagina/<%= produto.id %>" class="btn btn-outline-danger  float-end me-4 col-4">Comprar</a>
+                   <a href="pagina?id=<%= produto.id %>" class="btn btn-outline-danger mt-3">Comprar</a> 
+
                 </div>
                 
                 
@@ -85,7 +85,9 @@
               </div>
           </div>
       </div> 
-      <%  } %>
+      <% } %>
+
+      
         
         
           
