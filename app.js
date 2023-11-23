@@ -15,11 +15,16 @@ const produtos = [
   {id: 7, nome: "name", preco: "12", descricao: "sss", img: "nome.jpg"} ,
   {id: 8, nome: "name", preco: "12", descricao: "sss", img: "nome.jpg"} ,
   {id: 9, nome: "name", preco: "12", descricao: "sss", img: "nome.jpg"} ,
-  {id: 10, nome: "name", preco: "12", descricao: "sss", img: "nome.jpg"} 
+  {id: 10,nome: "name", preco: "12", descricao: "sss", img: "nome.jpg"} 
 ] ;
 
+function buscaPorId(id){
+  const produto= produtos.find(produto => produto.id == id);
+  return produto || null
+};
+
 app.get('/', (req, res) => {
-  res.render('index', { message: 'Olá mundo' });
+  res.render('index', {produtos});
 });
 
 
