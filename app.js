@@ -6,18 +6,6 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 const produtos = [
-<<<<<<< HEAD
-  {id: 1, nome: "name", preco: "12", descricao: "sss", img: "nome.jpg"} ,
-  {id: 2, nome: "name", preco: "12", descricao: "sss", img: "nome.jpg"} ,
-  {id: 3, nome: "name", preco: "12", descricao: "sss", img: "nome.jpg"} ,
-  {id: 4, nome: "name", preco: "12", descricao: "sss", img: "nome.jpg"} ,
-  {id: 5, nome: "name", preco: "12", descricao: "sss", img: "nome.jpg"} ,
-  {id: 6, nome: "name", preco: "12", descricao: "sss", img: "nome.jpg"} ,
-  {id: 7, nome: "name", preco: "12", descricao: "sss", img: "nome.jpg"} ,
-  {id: 8, nome: "name", preco: "12", descricao: "sss", img: "nome.jpg"} ,
-  {id: 9, nome: "name", preco: "12", descricao: "sss", img: "nome.jpg"} ,
-  {id: 10,nome: "name", preco: "12", descricao: "sss", img: "nome.jpg"} 
-=======
   {id: 1, nome: "Notebook Samsung NP550XDA-KV3BR Intel Core i3-1115G4 4GB 256GB SSD Tela 15,6 Windows 11 - Cinza Chumbo", preco: "2.499.90", descricao: "Note Brabo", img: "imagens/img-1.jpg"} ,
   {id: 2, nome: "Game - Red Dead Redemption 2 - PS4", preco: "89.99", descricao: "Jogo Brabo", img: "imagens/img-2.jpg"} ,
   {id: 3, nome: "Game final fantasy xvi - ps5", preco: "307.99", descricao: "Jogo Bão Demais", img: "imagens/img-3.jpg"} ,
@@ -28,7 +16,7 @@ const produtos = [
   {id: 8, nome: "Notebook Samsung NP550XDA-KV3BR Intel Core i3-1115G4 4GB 256GB SSD Tela 15,6 Windows 11 - Cinza Chumbo", preco: "2.499.90", descricao: "Note Brabo", img: "imagens/img-1.jpg"} ,
   {id: 9, nome: "Notebook Samsung NP550XDA-KV3BR Intel Core i3-1115G4 4GB 256GB SSD Tela 15,6 Windows 11 - Cinza Chumbo", preco: "2.499.90", descricao: "Note Brabo", img: "imagens/img-1.jpg"} ,
   {id: 10, nome: "Notebook Samsung NP550XDA-KV3BR Intel Core i3-1115G4 4GB 256GB SSD Tela 15,6 Windows 11 - Cinza Chumbo", preco: "2.499.90", descricao: "Note Brabo", img: "imagens/img-1.jpg"} 
->>>>>>> 465c368963cf281395939577face30edf7234859
+
 ] ;
 
 function buscaPorId(id){
