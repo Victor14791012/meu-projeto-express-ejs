@@ -30,8 +30,9 @@ app.get('/', (req, res) => {
 
 
 
-app.get('/pagina', (req, res) => {
-  res.render('pagina', { message: 'produto' });
+app.get('/pagina/:id', (req, res) => {
+  const produto = buscaPorId(req.params.id)
+  res.render('pagina', { produto });
 });
 
 app.listen(port, () => {
